@@ -156,7 +156,7 @@ const storage = __WEBPACK_IMPORTED_MODULE_2_multer___default.a.diskStorage({
     cb(null, '../public');
   },
   filename: function (req, file, cb) {
-    cb(null, file.filename + '-' + Date.now());
+    cb(null, file.fieldname + '-' + Date.now());
   }
 });
 
